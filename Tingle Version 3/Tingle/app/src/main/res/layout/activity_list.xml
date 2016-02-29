@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical" >
+
+    <!-- Headline Color(ing) -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="bottom"
+                  android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlueLight"
+            android:text="@string/headlineChar0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorRed"
+            android:text="@string/headlineChar1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorGreen"
+            android:text="@string/headlineChar2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlueLight"
+            android:text="@string/headlineChar3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorYellow"
+            android:text="@string/headlineChar4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textColor="@color/colorGreen"
+            android:text="@string/headlineChar5"/>
+    </LinearLayout>
+
+    <!-- Button to nav. -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal" >
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/back_button"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="4dp"/>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/search_button"/>
+    </LinearLayout>
+
+    <!-- Search input -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/what_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="@string/what_thing"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+    </ListView>
+</LinearLayout>
