@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical|center_horizontal"
+              android:weightSum="1">
+
+    <!-- App headline -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="76dp"
+                  android:orientation="horizontal"
+                  android:id="@+id/linearLayout"
+                  android:layout_centerHorizontal="true"
+                  android:gravity="center_horizontal"
+                  android:paddingBottom="10dp"
+                  android:layout_weight="0.12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorBlueLight"
+            android:text="@string/headlineChar0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorRed"
+            android:text="@string/headlineChar1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorGreen"
+            android:text="@string/headlineChar2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorBlueLight"
+            android:text="@string/headlineChar3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorYellow"
+            android:text="@string/headlineChar4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="50dp"
+            android:textColor="@color/colorGreen"
+            android:text="@string/headlineChar5"/>
+    </LinearLayout>
+
+    <!-- Search input -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="400dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/what_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="15dp"
+            android:hint="@string/search_button"
+            android:layout_gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+        <!-- Search button -->
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/search_button"
+            android:layout_weight="0"/>
+    </LinearLayout>
+
+</LinearLayout>
