@@ -1,4 +1,4 @@
-# MobileAppDevelopment
+# Android MobileAppDevelopment
 Mobile App Delevelopment -Pervasive Computing, ITU Copenhagen 
 
 Kursusnavn (dansk):	Mobile App Development
